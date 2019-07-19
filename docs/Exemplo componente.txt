@@ -1,0 +1,31 @@
+// EXEMPLO DE COMPONENTE(RELOGIO)
+		
+		import React, {Component} from 'react';
+
+		class Clock extends Component{
+		    render(){
+		        return (
+		            <h1>
+		                {
+		                    new Date().
+		                    toLocaleString('en-US', {
+		                        hour: 'numeric',
+		                        minute: 'numeric',
+		                        hour12: true
+		                    })
+		                }
+		            </h1>
+		        );
+		    }
+		}
+
+		export default Clock;
+
+		// CHAMANDO O COMPONENTE		
+		import Clock from './Clock';
+
+		ReactDOM.render(
+		  <Clock />,
+		  document.getElementById('id do elemento que receberá o relógio')
+		);
+

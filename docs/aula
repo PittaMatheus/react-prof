@@ -1,0 +1,16 @@
+- JSX
+
+PROPS
+	dados transitórios entre componentes
+
+	// Método que sempre será chamado quando um componente for construido
+	contructor()
+	// Contexto do componente recuperado pelo this. 
+	// props recupera o objeto
+	this.props = {} 
+
+One-way binding ou
+One-way data floy
+    fluxo da informação é unidirecional. Metodo render sempre renderiza os elemento com o valor atual do estados. o setState nao apenas altera apenas o estado, ele chama novamente o método render. conceito (Re-rendering)
+
+// mixin

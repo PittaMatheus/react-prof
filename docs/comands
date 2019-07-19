@@ -1,0 +1,17 @@
+Ativar servidor local
+php -S localhost:8000
+
+// instalando express
+npm install --save express
+
+// axios
+npm install --save.dev axios
+s
+// criando app react
+npx create-react-app my-app
+
+gulp
+sudo npm install gulp
+
+
+

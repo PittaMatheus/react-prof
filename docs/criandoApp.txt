@@ -1,0 +1,86 @@
+// Criando uma app na mão
+sudo npm init
+sudo npm install react react-dom
+sudo npm install --save dev parcel-bundle
+sudo npm install --save-dev babel-preset-env babel-preset-react
+
+
+//Para configurar o babel é preciso criar o arquivo
+.babelrc
+    {
+    "presets": [
+        "env",
+        "react"
+    ]
+}
+
+// criar o arquivo index.js e importar o react e o react dom
+
+import React from "react";
+import ReactDOM from "react-dom";
+
+ReactDOM.render(
+    <h1>Bem-vindo</h1>,
+    document.getElementById("root")
+);
+
+
+// Configurar o comando start no arquivo package.json
+"scripts": {
+    "start": "parcel index.html"
+  },
+
+// executar o comando pelo npm que irá gerar o servidor local
+npm start
+
+// incluindo o sass
+no index.js
+import "./index.scss";
+
+// criar arquivo index.scss
+h1{
+    color:blue;
+}
+
+// será necessário restartar o servidor e carregar a pagina para o efeito surtir
+
+// plugin do babel: adicionar no babelrc
+sudo npm install --save.dev babel-plugin-transform-class-properties
+
+
+
+prettier - organiza o code
+npm install --save-dev --save-exact prettier
+
+
+// Biblioteca classNames ajuda a condicionar as classes
+npm install classnames
+import classNames from 'classnames';
+ <button
+                className={classNames("note__button", {
+                    "note__button--hidden": index === 0
+                })}
+                onClick={() => {
+                    onMove("up", index);
+                    }} 
+            >
+
+// biblioteca de UID - id pelo tempo
+npm install uuid
+import uuid from "uuid/v1";
+//Ao adicionar uma nota, é gerado um id unico atravez da função uuid
+handleAddNote = text =>{
+        this.setState(prevState => ({
+            notes: prevState.notes.concat({ id: uuid(), text})
+        }));
+    }
+
+// ref = Acessa o elemento direto no dom
+    ref={ c=>{this.elemento(input por ex) = c;}
+
+
+// empacotador bundler
+processa o código fonte  de uma aplicação e gera código otimizado para um ambiente produtivo(produção)
+
+localStorage = guarda no proprio navegador
+
